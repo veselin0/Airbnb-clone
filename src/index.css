@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: Poppins, sans-serif;
 }
 
 .navbar {
@@ -15,4 +16,59 @@ body {
 
 .airbnb {
     max-width: 100px;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    /* margin-top: 3%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.group77 {
+    max-width:400px;
+    align-self: center;
+    /* height: 232px;
+    width: 395.906494140625px;
+    left: 77px;
+    top: 96px;
+    border-radius: 8.949999809265137px; */
+}
+
+.title {
+    margin-bottom: 16px;
+    
+    /* height: 40px;
+    width: 347px;
+    left: 58px;
+    top: 367px;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left; */
+}
+
+.text {
+    margin-top: 0px;
+    /* height: 56px;
+    width: 320px;
+    left: 36px;
+    top: 416px;
+    border-radius: nullpx;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left; */
 }
