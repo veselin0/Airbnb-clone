@@ -1,12 +1,11 @@
-
-
+import Navbar from "./components/Navbar";
 
 function App() {
-  return (
-    <div className="App">
-      Gocho!
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+        </div>
+    );
 }
 
 export default App;
