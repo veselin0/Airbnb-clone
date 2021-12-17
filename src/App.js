@@ -5,25 +5,32 @@ import Data from "./data.js";
 
 function App() {
     const cardElement = Data.map((datum) => {
-        const { coverImg, location, title, price, stats: {rating, reviewCount} } = datum;
+        const {
+            id,
+            coverImg,
+            location,
+            title,
+            price,
+            stats: { rating, reviewCount },
+        } = datum;
         return (
-            <Card 
-            img={coverImg} 
-            rating={rating}
-            reviewCount={reviewCount}
-            country={location}
-            title={title}
-            price={price}
-        />
+            <Card
+                key={id}
+                img={coverImg}
+                rating={rating}
+                reviewCount={reviewCount}
+                country={location}
+                title={title}
+                price={price}
+            />
         );
-        
     });
 
     return (
         <div>
             <Navbar />
             {/* <Hero /> */}
-            {cardElement}
+            <section className="cards-list">{cardElement}</section>
         </div>
     );
 }

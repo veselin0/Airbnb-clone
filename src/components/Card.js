@@ -1,15 +1,24 @@
-const Card = ({img, country, title, price, rating, reviewCount}) => {
+const Card = ({ img, country, title, price, rating, reviewCount }) => {
     return (
         <div className="card">
-            <img src={`../images/${img}`} className="card-img" alt="some view" />
+            <img
+                src={`../images/${img}`}
+                className="card-img"
+                alt="some view"
+            />
             <div className="card-stats">
-                <img src="../images/star.png" className="card-icon" alt="star icon" />
+                <img
+                    src="../images/star.png"
+                    className="card-icon"
+                    alt="star icon"
+                />
                 <span>{rating}</span>
                 <span className="gray">({reviewCount}) • </span>
                 <span className="gray">{country}</span>
             </div>
-            <p>{title}</p>
-            <p>
+            <p className="card-title">{title}</p>
+            <p className="card-price">
+                {price}
                 <span className="bold">From ${price}</span> / person
             </p>
         </div>
