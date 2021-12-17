@@ -1,4 +1,4 @@
-const Card = ({img, rating, reviewCount, country, title, price }) => {
+const Card = ({img, country, title, price, rating, reviewCount}) => {
     return (
         <div className="card">
             <img src={`../images/${img}`} className="card-img" alt="some view" />
