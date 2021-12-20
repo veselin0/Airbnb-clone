@@ -1,8 +1,21 @@
-const Card = ({ img, country, title, price, rating, reviewCount }) => {
+const Card = (props) => {
+    // console.log(props.datum);
+    const { coverImg, location, title, price, stats: {rating, reviewCount}, openSpots } = props.datum;
+
+    let badgeText = "";
+    if (openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (location === "Online") {
+        badgeText = "ONLINE"
+    } else {
+        badgeText = location;
+    }
+
     return (
         <div className="card">
+           <div className="card-badge">{badgeText}</div>
             <img
-                src={`../images/${img}`}
+                src={`../images/${coverImg}`}
                 className="card-img"
                 alt="some view"
             />
@@ -14,7 +27,7 @@ const Card = ({ img, country, title, price, rating, reviewCount }) => {
                 />
                 <span>{rating}</span>
                 <span className="gray">({reviewCount}) • </span>
-                <span className="gray">{country}</span>
+                <span className="gray">{location}</span>
             </div>
             <p className="card-title">{title}</p>
             <p className="card-price">
