@@ -17,11 +17,7 @@ function App() {
         return (
             <Card
                 key={datum.id}
-<<<<<<< HEAD
                 {...datum}
-=======
-                datum={datum}
->>>>>>> 5c4ba595a5f37b7a57cd37eb25e4d118544bd637
             />
         );
     });
