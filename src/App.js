@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Data from "./data.js";
 
@@ -17,7 +17,7 @@ function App() {
         return (
             <Card
                 key={datum.id}
-                datum={datum}
+                {...datum}
             />
         );
     });
@@ -25,7 +25,7 @@ function App() {
     return (
         <div>
             <Navbar />
-            {/* <Hero /> */}
+            <Hero />
             <section className="cards-list">{cardElement}</section>
         </div>
     );

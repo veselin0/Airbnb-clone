@@ -1,6 +1,6 @@
 const Card = (props) => {
-    // console.log(props.datum);
-    const { coverImg, location, title, price, stats: {rating, reviewCount}, openSpots } = props.datum;
+    // console.log(props);
+    const { coverImg, location, title, price, stats: {rating, reviewCount}, openSpots } = props;
 
     let badgeText = "";
     if (openSpots === 0) {
