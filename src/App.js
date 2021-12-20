@@ -5,23 +5,19 @@ import Data from "./data.js";
 
 function App() {
     const cardElement = Data.map((datum) => {
-        const {
+        /*const {
             id,
             coverImg,
             location,
             title,
             price,
             stats: { rating, reviewCount },
-        } = datum;
+            openSpots,
+        } = datum;*/
         return (
             <Card
-                key={id}
-                img={coverImg}
-                rating={rating}
-                reviewCount={reviewCount}
-                country={location}
-                title={title}
-                price={price}
+                key={datum.id}
+                datum={datum}
             />
         );
     });

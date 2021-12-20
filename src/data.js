@@ -10,7 +10,7 @@ const Data =  [
             reviewCount: 6
         },
         location: "Online",
-        openSpots: 0,
+        openSpots: 27,
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const Data =  [
             reviewCount: 30
         },
         location: "Online",
-        openSpots: 27,
+        openSpots: 0,
     },
     {
         id: 3,
